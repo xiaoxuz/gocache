@@ -7,9 +7,9 @@ GoCache提供基于内存的缓存功能，主要用于缓存一些使用频率�
 
 * 创建一个LRUCache
 `func NewLRUCache(size int, age int, expires time.Duration) *LRUCache`
- - size: Cache中能存放的最大记录量
- - age: 每条记录最多可被使用的次数，如果为0表示不限制使用次数
- - expires: 每条记录最长的有效期，如果为0表示不限制有效期
+    * size: Cache中能存放的最大记录量
+    * age: 每条记录最多可被使用的次数，如果为0表示不限制使用次数
+    * expires: 每条记录最长的有效期，如果为0表示不限制有效期
 
 * 写记录入LRUCache
 `func (lc *LRUCache) Set(key, val interface{}) {`
